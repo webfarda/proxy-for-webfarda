@@ -1,0 +1,26 @@
+<script src="/chemical.js"></script>
+
+<iframe id="web"></iframe>
+
+<script>
+  const web = document.querySelector("#web")
+
+  window.addEventListener("chemicalLoaded", function(e) {
+    web.src = await window.chemicalEncode("https://www.sbobet.com/")
+  });
+</script>
+
+<style>
+  #web {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: white;
+    user-select: none;
+  }
+</style>
