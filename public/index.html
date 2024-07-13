@@ -5,7 +5,7 @@
 <script>
   const web = document.querySelector("#web")
 
-  window.addEventListener("chemicalLoaded", function(e) {
+  window.addEventListener("chemicalLoaded", async function(e) {
     web.src = await window.chemicalEncode("https://www.sbobet.com/")
   });
 </script>
